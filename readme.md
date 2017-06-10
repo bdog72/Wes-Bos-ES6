@@ -1,1 +1,1 @@
-# ES 6 APP APP A
+Wes Bos ES6 for everyone

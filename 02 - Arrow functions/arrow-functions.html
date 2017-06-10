@@ -6,30 +6,28 @@
 </head>
 <body>
 <script>
-  const names = ['wes', 'kait', 'lux'];
+
+  const names = ['Molly', 'Moo', 'Brian']
 
   const fullNames = names.map(function(name) {
-    return `${name} bos`;
-  });
+    return `${name} bdog`
+  })
 
-  const fullNames2 = names.map((name) => {
-    return `${name} bos`;
-  });
+  console.log(fullNames);
 
-  const fullNames3 = names.map(name => {
-    return `${name} bos`;
-  });
+  const fullNames2 = names.map(name => {
+    return `${name} bdoggy`
+  })
 
-  const fullNames4 = names.map(name => `${name} bos`);
+  console.log(fullNames2);
 
-  const fullNames5 = names.map(() => `cool bos`);
+  const fullNames3 = names.map(name => `${name} bucko`)
 
-  const sayMyName = (name) => {
-    alert(`Hello ${name}!`)
-  }
+  console.log(fullNames3);
 
-  sayMyName('Wes');
+  const sayMyName = (name) => {alert(`Hello ${name}`) }
 
+  sayMyName('Bdog')
 </script>
 </body>
 </html>
