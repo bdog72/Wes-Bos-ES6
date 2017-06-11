@@ -6,17 +6,28 @@
   <style>
     .hl {
       background: #ffc600;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 <script>
 
+function highlight(strings, ...values) {
+  let str = ''
+  strings.forEach((string, i) => {
+    str += `${string}
+    <span class='hl'>${values[i] || ''}</span>`
+  })
+  return str
+}
+
 const name = 'Molly'
 const age = 5
-const sentence = `My dogs name is ${name} and she is ${age} years old`
+const sentence = highlight`My doggies name is ${name} and she is ${age} years old `
 
   console.log(sentence);
+  document.body.innerHTML = sentence
 
 </script>
 </body>
