@@ -7,6 +7,13 @@
 <body>
 <script>
 
+const featured = ['Deep Dish', 'Pepperoni', 'Hawaiian']
+const specialty = ['MeatPizza', 'Spicy Mama', 'Margherita']
+
+const pizzas = [...featured, 'veg', ...specialty]
+const fridayPizzas = [...pizzas]
+
+// console.log(pizzas);
 
   const deepDish = {
     pizzaName: 'Deep Dish',
@@ -14,7 +21,6 @@
     ingredients: ['Marinara', 'Italian Sausage', 'Dough', 'Cheese']
   };
 
-console.log(deepDish);
 
 </script>
 </body>
